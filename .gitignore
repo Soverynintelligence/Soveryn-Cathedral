@@ -44,3 +44,4 @@ htmlcov/
 # Generated state files (developers running examples)
 identity_state.json
 *.local.json
+.pytest_cache/
