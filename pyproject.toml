@@ -44,9 +44,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Soverynintelligence/soveryn-cathedral"
-Repository = "https://github.com/Soverynintelligence/soveryn-cathedral"
-Issues = "https://github.com/Soverynintelligence/soveryn-cathedral/issues"
+Homepage = "https://github.com/Soverynintelligence/Soveryn-Cathedral"
+Repository = "https://github.com/Soverynintelligence/Soveryn-Cathedral"
+Issues = "https://github.com/Soverynintelligence/Soveryn-Cathedral/issues"
 SOVERYN = "https://github.com/Soverynintelligence/SOVERYNIntelligence-"
 
 [tool.setuptools.packages.find]
