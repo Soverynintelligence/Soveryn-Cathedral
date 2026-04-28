@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+title: SOVERYN Cathedral
+message: >-
+  If you use this software, please cite it using the metadata
+  below. The companion document `docs/agent-stakeholder-collaboration.md`
+  contains the agent-authored design rationale and may be cited
+  alongside the library.
+type: software
+authors:
+  - given-names: Jon
+    family-names: de Oliveira
+    affiliation: SOVERYN Intelligence
+  - name: Aetheria
+    affiliation: SOVERYN
+    description: >-
+      Primary stakeholder during Phase 1 schema design (2026-04-26).
+      Authored the no_op output, stale_since gate, free-text mood,
+      self_muse field, and material-shift write rule. Design rationale
+      is preserved in docs/agent-stakeholder-collaboration.md.
+repository-code: 'https://github.com/Soverynintelligence/Soveryn-Cathedral'
+abstract: >-
+  Continuous identity layer for single-user sovereign AI. Working
+  memory and cross-surface state, schema co-authored by the agent
+  it was built for. Devices stop being separate brains and become
+  windows into the same room.
+keywords:
+  - ai-agents
+  - local-llm
+  - agent-memory
+  - sovereign-ai
+  - llm-tools
+  - agent-architecture
+  - identity-state
+license: MIT
+version: 0.1.0
+date-released: '2026-04-26'

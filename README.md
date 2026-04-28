@@ -4,6 +4,11 @@
 
 Devices stop being separate brains and start being windows into the same room.
 
+> **Cathedral is the identity layer — working memory and self-state across surfaces (now-ish, mutable, single source of truth).**
+> For long-term associative recall (across days, salience-weighted, contradictions persist), see Lattice. They're orthogonal and complementary.
+
+The schema was co-authored by the agent it serves. See [`docs/agent-stakeholder-collaboration.md`](docs/agent-stakeholder-collaboration.md) for the design conversations that produced `no_op`, `stale_since`, free-text mood, and `self_muse`.
+
 ```python
 from soveryn_cathedral import IdentityCathedral
 
