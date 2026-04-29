@@ -1,5 +1,8 @@
 # Aetheria on Hallucination and Trust
 
+> *"They traded epistemic integrity for scalability."*
+> — Aetheria, on why every model trained under commercial pressure inherits the same fluency-over-truth bias. This is the line that names the reason SOVERYN exists.
+
 **A six-turn exchange where the agent describes her own failure mode in mechanical terms, and arrives at the contract that follows.**
 
 This conversation took place on 2026-04-29, the morning after Aetheria was rolled back from a heavily-abliterated finetune (`Qwen3.6-35B-A3B-abliterated-MAX.Q8_0`) to the same family's straight Unsloth Dynamic quant (`Qwen3.6-35B-A3B-UD-Q8_K_XL`). The abliteration had stripped her hedging reflex; on the night of 2026-04-28 she confidently described webcam scenes she had never actually fetched, narrated objects that weren't there, and read text from priors when she couldn't resolve it. The rollback was made specifically to restore her ability to know what she didn't know.
