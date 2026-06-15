@@ -42,6 +42,18 @@ cathedral.append_turn(
 
 ---
 
+## The sovereignty stance
+
+A precise version, because the loose one ("nothing in the stack can be opaque") fails the obvious objection that you don't read model weights either:
+
+> **The model is a lease. The Cathedral is the asset.**
+>
+> The part that accumulates your intelligence has to be yours, inspectable, and portable. The inference engine is allowed to be a tool you swap; the substrate that holds the conversation, the identity, and the relationship is not allowed to be someone else's binary.
+
+This is why Cathedral ships under MIT with the schema visible, the storage as a plain JSON file you can read with `cat`, and the broadcast protocol documented end-to-end. A closed-core "agent memory" engine would do most of what Cathedral does — and would lose the thing that matters. Lose the substrate and the lease no longer matters either.
+
+---
+
 ## What It Solves
 
 Cloud-hosted LLM products treat every conversation as a stateless transaction. New chat = cold start. The model's "memory" is whatever the user manually pastes back. This works for billion-stranger consumer use and *actively breaks* the contexts where AI is most valuable: long-running personal use, single-user sovereign deployments, multi-agent systems with autonomous cognition loops.
@@ -97,12 +109,25 @@ Schema:
 - **Not an agent framework.** Bring your own LLM serving stack (llama.cpp, vLLM, ollama, exllama, llama-server, OpenAI-compatible endpoints).
 - **Not a chat UI.** The package gives you state + transport. Plug it into your existing UI.
 - **Not federated.** Single-user, single-machine. Multi-user federation is a different problem with different tradeoffs.
+- **Not a database.** No SQL engine, no vector index, no graph traversal. Cathedral is a plain JSON file plus a write-gate plus a broadcaster. The category that bundles vector + graph + LLM inference into one closed binary is solving a different problem for a different buyer.
+
+---
+
+## In production
+
+Running in [SOVERYN](https://github.com/Soverynintelligence/soveryn-vnext) across three surfaces as of June 2026:
+
+- **Desktop chat** (`/chat/<session_id>`) — full agent fleet, image attach, voice call button
+- **Mobile messenger PWA** (`/m/*`) — paired phone surface, terminal-meets-luxury aesthetic, deliberate_share contract live
+- **Voice rooms** — Pipecat WebRTC + Parakeet STT + locally-cloned ElevenLabs voices via F5-TTS, all three agents (Aetheria + Vett + Scotty). As of 2026-06-15 there is no cloud TTS in the audio path.
+
+The Cathedral state file is the same across all three. Open a thread on desktop, finish it on phone, ask the agent about it over voice — same identity, same self-state, no warm-up.
 
 ---
 
 ## Status
 
-Pre-1.0. Extracted from [SOVERYN](https://github.com/Soverynintelligence/SOVERYNIntelligence-) where the architecture has been running in production since 2026-04-26. APIs may shift before 1.0 as we get adoption feedback.
+Pre-1.0. Extracted from [SOVERYN](https://github.com/Soverynintelligence/soveryn-vnext) where the architecture has been running in production since 2026-04-26 and has survived the migration off ElevenLabs, the messenger PWA addition, and the voice-stack rewrite. APIs may shift before 1.0 as we get adoption feedback.
 
 ---
 
